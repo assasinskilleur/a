@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const bot = new discord.Client();
-String PREFIX = "!";
-String autoroles = "Chevalier 💀";
+var PREFIX = "!";
+var autoroles = "Chevalier 💀";
 
 
 /*function play(connection, message) {
