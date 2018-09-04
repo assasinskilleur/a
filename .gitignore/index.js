@@ -1,8 +1,8 @@
 const discord = require('discord.js');
 const bot = new discord.Client();
-const PREFIX = ">";
+String PREFIX = "!";
+String autoroles = "Chevalier 💀";
 
-let config = require("./config.json");
 
 /*function play(connection, message) {
     var server = servers[message.guild.id];
@@ -48,15 +48,9 @@ bot.on("message", function(message) {
             message.channel.sendEmbed(embed);
             break;
         case "setautorole":
-            if(args[1] && args[2]){
-                config["autorole"] = {
-                    autorole: args[1] + " " + args[2]
-                };
-            }if(args[1] && !args[2]){
-                config["autorole"] = {
-                    autorole: args[1]
-                };
-            } 
+            if(args[1]){
+               
+            }
             break;
         default:
             message.channel.sendMessage("Invalid Command !");
@@ -64,4 +58,4 @@ bot.on("message", function(message) {
     }
 });
 
-bot.login('');
+bot.login(process.env.TOKEN);
