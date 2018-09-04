@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const bot = new discord.Client();
 var PREFIX = "!";
-var autoroles = "Chevalier 💀";
+var autoroles = "Chevalier";
 
 var tabHello = ['bonjour', 'salut', 'hello', 'guten tag', 'buenos dias'];
 var tabAnsw = ['Bonjour votre majesté.', 'Salutations jeune Douzien !', 'Ouais, ouais. T\'es qui déjà ?', 'Bonjour ' + message.author.mention + ', comment vas-tu aujourd\'hui ?'];
